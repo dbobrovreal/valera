@@ -11,12 +11,11 @@ def print_actions
   IOAdapter.instance.output "\n[ДЕЙСТВИЯ]:"
   actions = @actions_pool.avaliable_actions(@character)
   actions.each { |key, value| IOAdapter.instance.output("[#{key}] - #{value.name} (#{value.description})") }
-  IOAdapter.instance.output 'Нажмите "s" чтобы сохраниться'
-  IOAdapter.instance.output 'Нажмите "l" чтобы загрузить данный'
-  IOAdapter.instance.output 'Нажмите "q" чтобы выйти'
+  IOAdapter.instance.output '-------------'
+  IOAdapter.instance.output '[save] [load] [exit]'
 end
 
 def print_indicators
-  IOAdapter.instance.output "\n[PARAMETERS]:"
+  IOAdapter.instance.output "\n[Параметры]:"
   INDICATORS.each { |param| IOAdapter.instance.output "[#{param}] : #{@character.send param}" }
 end
