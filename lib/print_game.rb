@@ -10,7 +10,7 @@ end
 def print_actions
   IOAdapter.instance.output "\n[ДЕЙСТВИЯ]:"
   actions = @actions_pool.avaliable_actions(@character)
-  actions.each { |key, value| IOAdapter.instance.output("[#{key}] - #{value.name} (#{value.description})") }
+  actions.each { |key, value| IOAdapter.instance.output("#{key} - #{value.name} (#{value.description})") }
   IOAdapter.instance.output '-------------'
   IOAdapter.instance.output '[save] [load] [exit]'
 end
