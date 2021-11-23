@@ -1,5 +1,5 @@
 class SaveOrLoad
-  def initialize(filename = 'save_game.txt')
+  def initialize(filename = 'save_games/valera_game.txt')
     @filename = filename
     @parameters = %w[health mana happiness fatigue money]
   end
