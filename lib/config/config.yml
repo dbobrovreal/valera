@@ -1,16 +1,16 @@
 initial:
   -
     parameter: health
-    value: 80
+    value: 100
   -
     parameter: happiness
-    value: 50
+    value: 10
   -
     parameter: fatigue
-    value: 3
+    value: 0
   -
     parameter: money
-    value: 1500
+    value: 500
 actions:
   -
     name: Пойти на работу
