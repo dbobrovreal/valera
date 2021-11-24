@@ -3,6 +3,7 @@ require_relative 'config_load'
 require_relative 'menu'
 require_relative 'actions_pool'
 require_relative 'io_adapter'
+require_relative 'print_game'
 require_relative 'game'
 
 class Application
